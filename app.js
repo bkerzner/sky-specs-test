@@ -4,9 +4,7 @@ const favoritesAPI = require('./utils/favorites-api')
 
 const app = express()
 
-// const publicDirectoryPath = path.join(__dirname, '../public')
-// console.log(publicDirectoryPath)
-// app.use(express.static(publicDirectoryPath))
+app.use(express.static('public'))
 
 app.get('/gists/user', (req, res) => {
     const userName = req.query.userName;
