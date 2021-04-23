@@ -15,4 +15,5 @@ CREATE TABLE favorite_gists (
 **Then...**
 
 > npm install
+> 
 > node app.js
